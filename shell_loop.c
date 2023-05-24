@@ -36,10 +36,10 @@ int hsh(info_t *info, char **av)
 		exit(info->status);
 	if (bltn_r == -2)
 	{
-		if (info->err_num == -1
+		if (info->err_num == -1)
 			exit(info->status);
 		exit(info->err_num);
-	}
+		}
 	return (bltn_r);
 }
 

@@ -107,7 +107,7 @@ char *convert_number(long int num, int base, int flags)
 		sin = '-';
 
 	}
-	array = flags & CONVERT_LOWERCASE ? "0123456789abcdef" : "0123456789ABCDEF";
+	arr = flags & CONVERT_LOWERCASE ? "0123456789abcdef" : "0123456789ABCDEF";
 	ptr2 = &buff[49];
 	*ptr2 = '\0';
 

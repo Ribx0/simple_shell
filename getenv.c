@@ -80,7 +80,7 @@ int _setenv(info_t *info, char *var, char *value)
 		if (pt && *pt == '=')
 		{
 			free(nd->str);
-			node->str = buf;
+			nd->str = buf;
 			info->env_changed = 1;
 			return (0);
 		}
